@@ -1,0 +1,42 @@
+<h2>New Book</h2>
+<%= form_with model:@book, local:true do |f| %>
+
+<% if @book.errors.any? %>
+    <ul>
+      <% @book.errors.full_messages.each do |book| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<p>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %>
+</p>
+
+<p>
+  <%= f.label :body %><br>
+  <%= f.text_area :body %>
+</p
+
+<p>
+  <%= f.submit 'Create Book' %>
+</p>
+
+
+
+<% end %>
+
+<!--<%= form_for @book, url:'/books', local:true do |f| %>-->
+<!--  <h4>Title</h4>-->
+<!--  <%= f.text_field :title %>-->
+<!--  <h4>Body</h4>-->
+<!--  <%= f.text_area :body %>-->
+<!--  <%= f.submit 'Create Book' %>-->
+  <!--<% if flash[:notice] %>-->
+  <!--   <p id="notice">-->
+  <!--     <%= flash[:notice] %>-->
+  <!--   </p>-->
+  <!-- <% end %>-->
+<!--<% end %>-->
