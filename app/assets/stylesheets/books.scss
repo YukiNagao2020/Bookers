@@ -14,6 +14,22 @@ body {
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 13px;
     line-height: 18px;
+    margin: 33px;
+    display: block;
+}
+
+p {
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+
+.heading {
+    display: flex;
+}
+
+strong {
+    font-weight: bold;
 }
 
 table {
@@ -64,3 +80,14 @@ form {
     margin-top: 0em;
 }
 
+.flash {
+    color: green;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.contents {
+    margin-bottom: 20px;
+}
