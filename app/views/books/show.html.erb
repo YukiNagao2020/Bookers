@@ -4,19 +4,15 @@
   </div>
 <% end %>
 
-<div class="heading">
   <p>
     <strong>Title:</strong>
-    <p><%= @book.title %></p>
+    <%= @book.title %>
   </p>
-</div>
 
-<div class="heading">
   <p>
     <strong>Body:</strong>
-    <p><%= @book.body %></p>
+    <%= @book.body %>
   </p>
-</div>
 
 <%= link_to "Edit", edit_book_path(@book.id) %>
 <span>|</span>
